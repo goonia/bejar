@@ -1,5 +1,6 @@
 config.ru
 Gemfile.lock
+db/
 
 *.gem
 *.rbc
