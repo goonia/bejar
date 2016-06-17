@@ -6,4 +6,6 @@ gem "haml"
 gem "data_mapper"
 gem "dm-sqlite-adapter"
 
+gem "bcrypt"
+
 gem "persian"
