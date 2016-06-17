@@ -1,8 +1,11 @@
 class Bejar
 
-  configure do
-    set :sessions, true
-  end
+    # Bejar main configurations
+    configure do
+        set :sessions, true
+        set :session_secret, "hello"
+    end
 
-  helpers Sinatra::User
+    #  Register App Helpers
+    helpers Sinatra::User
 end
