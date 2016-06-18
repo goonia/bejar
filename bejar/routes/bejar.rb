@@ -39,5 +39,10 @@ class BejarPublic
         session[:user] = @user.id
         "you joined successfully"
     end
-    
+
+    get "/signout" do
+        session[:user] = nil
+        redirect "/"
+    end
+
 end

@@ -1,10 +1,9 @@
 !!!
 %html
     %head
-        %title Sign up
-  %body
+        %title Sign in
+%body
     %form{ :method => :POST}
         %input{ :type => :email, :placeholder => :email, :name => :email}
         %input{ :type => :password, :placeholder => :password, :name => :password}
-        %input{ :type => :submit, :value => :Signup}
-        %p= @user.inspect
+        %input{ :type => :submit, :value => :Signin}
