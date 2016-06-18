@@ -19,6 +19,7 @@ class BejarPublic
     end
 
     before do
+        @title = "Bejar"
         @user = User.first(:id => session[:user]) if session[:user]
     end
 
@@ -27,7 +28,13 @@ class BejarPublic
     end
 
     post "/signin" do
-        "email :" + params[:email]
+        @user = User.first(:email => params[:email])
+
+        if @user.password == params[:password]
+            @user[:email]
+        else
+            "user not exists"
+        end
     end
 
     get '/signup' do
