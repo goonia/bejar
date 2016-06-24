@@ -1,6 +1,6 @@
 require 'data_mapper'
 
-database = 'sqlite://#{Dir.pwd}/db/development.db'
+database = "sqlite://#{Dir.pwd}/db/development.db"
 DataMapper.setup(:default, database)
 
 # Bejar Users model in datamapper
