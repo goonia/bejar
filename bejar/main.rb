@@ -1,5 +1,5 @@
-require "sinatra"
-require "persian"
+require 'sinatra'
+require 'persian'
 
 # Bejar signedin-level app
 class Bejar < Sinatra::Base
