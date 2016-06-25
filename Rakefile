@@ -6,3 +6,8 @@ namespace :db do
     DataMapper.auto_upgrade!
   end
 end
+
+desc 'test'
+task :test do
+  system('rubocop')
+end
