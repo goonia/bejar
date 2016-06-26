@@ -3,6 +3,7 @@ class Bejar
   # Bejar main configurations
   configure do
     set :sessions, true
+    set :logging, true
     set :session_secret, 'hello'
   end
 
