@@ -1,4 +1,5 @@
 require 'sinatra/base'
+use Rack::Logger
 
 # Sintra module
 module Sinatra
@@ -17,5 +18,13 @@ module Sinatra
     end
   end
 
+  # Bejar App logger
+  module Log
+    def log
+      request.logger
+    end
+  end
+
   helpers User
+  helpers Log
 end

@@ -9,4 +9,10 @@ class Bejar
 
   #  Register App Helpers
   helpers Sinatra::User
+  helpers Sinatra::Log
+end
+
+# BejarPublic App general config
+class BejarPublic
+  helpers Sinatra::Log
 end

@@ -2,6 +2,7 @@
 class Bejar
   before do
     signin
+    logger
     @user = User.first(id: session['user']) if session[:user]
   end
 
@@ -19,6 +20,7 @@ class BejarPublic
 
   before do
     @title = 'Bejar'
+    logger
     @user = User.first(id: session[:user]) if session[:user]
   end
 
