@@ -32,7 +32,8 @@ class BejarPublic
     @user = User.first(email: params[:email])
 
     if @user.password == params[:password]
-      @user[:email]
+      session[:user] = @user.id
+      redirect '/'
     else
       'user not exists'
     end
